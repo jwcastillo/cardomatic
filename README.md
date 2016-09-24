@@ -11,12 +11,16 @@ npm install -g cardomatic
 
 Then create directory that will contain all your CSV files.
 
-Each CSV file must contain 2 columns with name & image filename (image must be local, not remote).  This is an example:
+Each CSV file must contain 2 columns with image filename (image must be local, not remote) and the text behind the page.  This is an example:
 
 ```
-"Elephant","images/elephant.jpg"
-"Rabbit","images/rabbit.jpg"
+"images/elephant.jpg","Elephant"
+"images/rabbit.jpg","Rabbit"
 ...
 ```
 
-Run `cardomatic` in that directory.  Once it's done, marvel at all the generated PDFs before printing them.
+Run `cardomatic` in that directory.  Once it's done, marvel at all the generated PDFs before printing them with the following settings:
+
+* Landscape
+* Duplex
+* Fit to page (the generated PDF has no margins)

@@ -7,8 +7,8 @@ import * as glob from 'glob'
 import replaceExt = require('replace-ext')
 
 enum csvIndex {
-  name = 0,
-  imageSrc = 1
+  imageSrc = 0,
+  text = 1,
 }
 
 const globAsync = Bluebird.promisify<string[], string>(glob)
@@ -42,12 +42,13 @@ globAsync('*.csv')
       layout: 'landscape',
       margin: 0,
     })
-    doc.pipe(fs.createWriteStream(destFilename))
     const page = doc.page
+    doc.pipe(fs.createWriteStream(destFilename))
+    doc.fontSize(36)
 
     const last = csv.length - 1
     for (let i = 0; i <= last; i++) {
-      const [name, imageSrc] = csv[i]
+      const [imageSrc, text] = csv[i]
 
       const image = sizeOf(imageSrc)
       const widthRatio = page.width / image.width
@@ -60,7 +61,12 @@ globAsync('*.csv')
       doc.image(imageSrc, x, y, {
         fit: [scaledImage.width, scaledImage.height],
       })
-      .text(name, 20, page.height - 30)
+
+      // center text on page
+      doc.addPage()
+      doc.text(text, 0, 150, {
+        align: 'center',
+      })
 
       if (i < last) doc.addPage()
     }
