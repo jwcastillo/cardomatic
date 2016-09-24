@@ -1,0 +1,28 @@
+{
+  "name": "cardomatic",
+  "version": "1.0.0",
+  "bin": "./bin/cardomatic.js",
+  "scripts": {
+    "start": "node lib/index.js"
+  },
+  "author": "Chris Khoo",
+  "license": "MIT",
+  "dependencies": {
+    "babyparse": "^0.4.6",
+    "bluebird": "^3.4.6",
+    "glob": "^7.1.0",
+    "image-size": "^0.5.0",
+    "pdfkit": "^0.8.0",
+    "replace-ext": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/babyparse": "0.0.30",
+    "@types/bluebird": "^3.0.33",
+    "@types/glob": "^5.0.30",
+    "@types/image-size": "0.0.28",
+    "@types/node": "^6.0.41",
+    "@types/pdfkit": "^0.7.31",
+    "@types/replace-ext": "0.0.27",
+    "typescript": "^2.0.3"
+  }
+}
