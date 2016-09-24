@@ -16,4 +16,4 @@ How to
    ```
 
 4. Run `cardomatic` in that directory.
-5. Marvel at all the generated PDFs in that directory (and then print them).
+5. Marvel at all the generated PDFs (and then print them).
