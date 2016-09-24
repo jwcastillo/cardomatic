@@ -1,6 +1,6 @@
 {
   "name": "cardomatic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": "./bin/cardomatic.js",
   "scripts": {
     "start": "node lib/index.js"
