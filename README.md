@@ -24,3 +24,8 @@ Run `cardomatic` in that directory.  Once it's done, marvel at all the generated
 * Landscape
 * Duplex
 * Fit to page (the generated PDF has no margins)
+
+## Tips for choosing images
+
+* Singular, not plural (e.g. one almond vs. many almonds)
+* High-res
