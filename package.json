@@ -20,7 +20,7 @@
     "@types/bluebird": "^3.0.33",
     "@types/glob": "^5.0.30",
     "@types/image-size": "0.0.28",
-    "@types/node": "^6.0.41",
+    "@types/node": "^7.0.12",
     "@types/pdfkit": "^0.7.31",
     "@types/replace-ext": "0.0.27",
     "typescript": "^2.0.3"
