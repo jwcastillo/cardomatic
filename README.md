@@ -1,4 +1,6 @@
 # cardomatic
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/khoomeister/cardomatic.svg)](https://greenkeeper.io/)
 Generates Doman-inspired flashcards for visual (and hopefully not oral) consumption by our little ones
 
 ## How to
